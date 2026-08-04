@@ -1,47 +1,44 @@
-import {
-  FaGlobe,
-  FaMobileAlt,
-  FaCloud,
-  FaShieldAlt,
-  FaRobot,
-  FaCode,
-  FaMapMarkedAlt,
-} from "react-icons/fa";
+import websiteImg from "../assets/services/website.jpg";
+import mobileImg from "../assets/services/mobile-app.jpg";
+import cloudImg from "../assets/services/cloud.jpg";
+import cyberImg from "../assets/services/cybersecurity.jpg";
+import aiImg from "../assets/services/ai.jpg";
+import trackingImg from "../assets/services/tracking.jpg";
 
 const services = [
   {
-    icon: <FaGlobe />,
     title: "Website Development",
+    image: websiteImg,
     description:
       "Professional, responsive websites that help businesses build a strong online presence.",
   },
   {
-    icon: <FaMobileAlt />,
     title: "Mobile Application Development",
+    image: mobileImg,
     description:
       "Modern Android and iOS applications designed to improve customer and business operations.",
   },
   {
-    icon: <FaCloud />,
     title: "Cloud Solutions",
+    image: cloudImg,
     description:
       "Secure cloud platforms, hosting solutions, and digital infrastructure for growing businesses.",
   },
   {
-    icon: <FaShieldAlt />,
     title: "Cybersecurity Solutions",
+    image: cyberImg,
     description:
       "Security systems designed to protect business data, applications, and digital assets.",
   },
   {
-    icon: <FaRobot />,
     title: "AI & Automation",
+    image: aiImg,
     description:
       "Smart AI solutions that automate tasks and improve business productivity.",
   },
   {
-    icon: <FaMapMarkedAlt />,
     title: "Tracking & Workforce Systems",
+    image: trackingImg,
     description:
       "Smart workforce management, biometric attendance, GPS tracking, and monitoring solutions.",
   },
@@ -49,96 +46,48 @@ const services = [
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      className="bg-black text-white py-24 px-6"
-    >
-
-      <div className="max-w-7xl mx-auto">
-
-        {/* Heading */}
-        <div className="text-center mb-16">
-
-          <span className="inline-block border border-yellow-500 text-yellow-400 px-5 py-2 rounded-full text-sm">
+    <section id="services" className="bg-black py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-14">
+          <p className="text-yellow-400 font-semibold uppercase tracking-widest">
             WHAT WE DO
-          </span>
-
-          <h2 className="text-4xl md:text-5xl font-bold mt-6">
-            Our{" "}
-            <span className="text-yellow-400">
-              Services
-            </span>
-          </h2>
-
-          <p className="text-gray-400 mt-5 max-w-2xl mx-auto">
-            We provide innovative technology solutions that help
-            organizations improve efficiency, security, and growth.
           </p>
 
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-2">
+            Our Services
+          </h2>
+
+          <p className="text-gray-400 mt-4 max-w-3xl mx-auto">
+            We provide innovative technology solutions that help organizations
+            improve efficiency, security, and growth.
+          </p>
         </div>
 
-
-        {/* Cards */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-
             <div
               key={index}
-              className="
-              group
-              bg-gray-950
-              rounded-2xl
-              p-8
-              border
-              border-gray-800
-              hover:border-yellow-400
-              hover:-translate-y-2
-              transition-all
-              duration-300
-              "
+              className="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-yellow-500/30 hover:-translate-y-2 transition-all duration-300"
             >
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-56 object-cover"
+              />
 
-              {/* Icon */}
-              <div
-                className="
-                w-16
-                h-16
-                rounded-xl
-                bg-yellow-400
-                flex
-                items-center
-                justify-center
-                text-black
-                text-3xl
-                group-hover:scale-110
-                transition
-                "
-              >
-                {service.icon}
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-white mb-3">
+                  {service.title}
+                </h3>
+
+                <p className="text-gray-400 leading-7">
+                  {service.description}
+                </p>
               </div>
-
-
-              <h3 className="text-2xl font-bold mt-7">
-                {service.title}
-              </h3>
-
-
-              <p className="text-gray-400 mt-4 leading-7">
-                {service.description}
-              </p>
-
-
-              <div className="mt-6 h-1 w-12 bg-yellow-400 group-hover:w-full transition-all duration-500"></div>
-
             </div>
-
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }
