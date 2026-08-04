@@ -1,10 +1,8 @@
-import websiteImg from "../assets/services/website.jpg";
-import mobileImg from "../assets/services/mobile-app.jpg";
-import cloudImg from "../assets/services/cloud.jpg";
-import cyberImg from "../assets/services/cybersecurity.jpg";
-import aiImg from "../assets/services/ai.jpg";
-import trackingImg from "../assets/services/tracking.jpg";
-
+import websiteImg from "../assets/website.jpg";
+import mobileImg from "../assets/mobile-app.jpg";
+import cloudImg from "../assets/cloud.jpg";
+import aiImg from "../assets/ai.jpg";
+import trackingImg from "../assets/tracking.jpg";
 const services = [
   {
     title: "Website Development",
