@@ -1,45 +1,38 @@
-import websiteImg from "../assets/website.jpg";
-import mobileImg from "../assets/mobile-app.jpg";
-import cloudImg from "../assets/cloud.jpg";
-import cyberImg from "../assets/cybersecurity.jpg";
-import aiImg from "../assets/ai.jpg";
-import trackingImg from "../assets/tracking.jpg";
-
 export default function Services() {
   const services = [
     {
       title: "Website Development",
-      image: websiteImg,
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
       description:
         "Professional, responsive websites that help businesses build a strong online presence.",
     },
     {
       title: "Mobile Application Development",
-      image: mobileImg,
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800",
       description:
         "Modern Android and iOS applications designed to improve customer and business operations.",
     },
     {
       title: "Cloud Solutions",
-      image: cloudImg,
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800",
       description:
         "Secure cloud platforms, hosting solutions, and digital infrastructure for growing businesses.",
     },
     {
       title: "Cybersecurity Solutions",
-      image: cyberImg,
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
       description:
         "Security systems designed to protect business data, applications, and digital assets.",
     },
     {
       title: "AI & Automation",
-      image: aiImg,
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
       description:
         "Smart AI solutions that automate tasks and improve business productivity.",
     },
     {
       title: "Tracking & Workforce Systems",
-      image: trackingImg,
+      image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800",
       description:
         "Smart workforce management, biometric attendance, GPS tracking, and monitoring solutions.",
     },
