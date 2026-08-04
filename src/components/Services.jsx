@@ -1,7 +1,6 @@
 import websiteImg from "../assets/website.jpg";
 import mobileImg from "../assets/mobile-app.jpg";
 import cloudImg from "../assets/cloud.jpg";
-import cyberImg from "../assets/cybersecurity.jpg";
 import aiImg from "../assets/ai.jpg";
 import trackingImg from "../assets/tracking.jpg";
 
