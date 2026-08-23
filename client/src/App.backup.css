@@ -1,0 +1,141 @@
+/* CREATE USER MODAL */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal {
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.modal-header p {
+  margin: 6px 0 0;
+  color: #777;
+}
+
+.close-button {
+  width: 35px !important;
+  height: 35px;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none;
+  border-radius: 50%;
+  background: #f0f0f0 !important;
+  color: #333 !important;
+  font-size: 25px !important;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background: #ddd !important;
+}
+
+.modal form label {
+  display: block;
+  margin: 15px 0 7px;
+  color: #333;
+  font-weight: 600;
+}
+
+.modal form input,
+.modal form select {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal form input:focus,
+.modal form select:focus {
+  border-color: #d4af37;
+}
+
+.field-help {
+  display: block;
+  margin-top: 6px;
+  color: #888;
+  font-size: 12px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.cancel-button,
+.create-button {
+  width: auto !important;
+  margin: 0 !important;
+  padding: 11px 18px !important;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-button {
+  background: #eee !important;
+  color: #333 !important;
+  border: 1px solid #ddd !important;
+}
+
+.create-button {
+  background: #d4af37 !important;
+  color: #000 !important;
+  border: none !important;
+}
+
+.create-button:hover {
+  background: #e5c453 !important;
+}
+
+.success-message,
+.error-message {
+  margin-top: 18px;
+  padding: 11px 13px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.success-message {
+  background: #e7f7eb;
+  color: #247438;
+}
+
+.error-message {
+  background: #fdeaea;
+  color: #a32626;
+}

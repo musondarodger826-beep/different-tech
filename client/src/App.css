@@ -1,0 +1,1462 @@
+/* =========================================================
+   DIFFERENT.TECH
+   PROFESSIONAL FLEET DASHBOARD
+   ========================================================= */
+
+.dt-dashboard {
+  width: 100%;
+  min-height: 100%;
+  padding: 30px 32px 50px;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   DASHBOARD HEADER
+   ========================================================= */
+
+.dt-dashboard-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 28px;
+}
+
+.dt-section-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--dt-gold, #d6a928);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.8px;
+}
+
+.dt-dashboard-header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 850;
+  letter-spacing: -0.5px;
+}
+
+.dt-dashboard-header p {
+  margin: 8px 0 0;
+  color: var(--dt-muted, #8fa1b5);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   SYSTEM ONLINE
+   ========================================================= */
+
+.dt-online-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 9px 13px;
+
+  border: 1px solid rgba(34, 197, 94, 0.18);
+  border-radius: 8px;
+
+  background: rgba(34, 197, 94, 0.07);
+
+  color: #86efac;
+
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+
+  white-space: nowrap;
+}
+
+.dt-online-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  box-shadow:
+    0 0 0 4px rgba(34, 197, 94, 0.08),
+    0 0 12px rgba(34, 197, 94, 0.65);
+}
+
+
+/* =========================================================
+   DASHBOARD SECTION
+   ========================================================= */
+
+.dt-dashboard-section {
+  margin-bottom: 26px;
+}
+
+.dt-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 13px;
+
+  color: #94a3b8;
+}
+
+.dt-section-title > div {
+  min-width: 0;
+}
+
+.dt-section-title span {
+  display: block;
+
+  color: #dbe5ef;
+
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.1px;
+}
+
+.dt-section-title small {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #64748b;
+
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+
+/* =========================================================
+   LUCIDE ICON GLOBAL FIX
+   ========================================================= */
+
+.dt-dashboard svg {
+  display: block;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   FLEET STATISTICS
+   ========================================================= */
+
+.dt-stat-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 13px;
+}
+
+.dt-stat-card {
+  min-height: 125px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 18px;
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0d1a2a,
+      #091522
+    );
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.07);
+
+  box-shadow:
+    0 10px 28px
+    rgba(0, 0, 0, 0.16);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.dt-stat-card:hover {
+  transform: translateY(-2px);
+
+  border-color:
+    rgba(214, 169, 40, 0.25);
+}
+
+
+/* =========================================================
+   STAT ICON
+   ========================================================= */
+
+.dt-stat-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+}
+
+.dt-stat-icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+
+/* =========================================================
+   STAT CONTENT
+   ========================================================= */
+
+.dt-stat-content {
+  min-width: 0;
+}
+
+.dt-stat-label {
+  color: #8fa1b5;
+
+  font-size: 9px;
+  font-weight: 850;
+
+  letter-spacing: 0.9px;
+}
+
+.dt-stat-card strong {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #ffffff;
+
+  font-size: 27px;
+  font-weight: 850;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   EVENT GRID
+   ========================================================= */
+
+.dt-event-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  gap: 11px;
+}
+
+.dt-event-card {
+  min-height: 92px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0d1a2a,
+      #091522
+    );
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.07);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.dt-event-card:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   EVENT ICON
+   ========================================================= */
+
+.dt-event-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background:
+    rgba(255, 255, 255, 0.04);
+}
+
+.dt-event-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+
+/* =========================================================
+   EVENT CONTENT
+   ========================================================= */
+
+.dt-event-content {
+  min-width: 0;
+}
+
+.dt-event-content span {
+  display: block;
+
+  color: #8fa1b5;
+
+  font-size: 8px;
+  font-weight: 850;
+
+  letter-spacing: 0.8px;
+}
+
+.dt-event-content strong {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #ffffff;
+
+  font-size: 21px;
+}
+
+
+/* =========================================================
+   EVENT COLORS
+   ========================================================= */
+
+.dt-event-red .dt-event-icon {
+  background:
+    rgba(239, 68, 68, 0.10);
+
+  color: #ef4444;
+}
+
+.dt-event-orange .dt-event-icon {
+  background:
+    rgba(245, 158, 11, 0.10);
+
+  color: #f59e0b;
+}
+
+.dt-event-purple .dt-event-icon {
+  background:
+    rgba(147, 51, 234, 0.10);
+
+  color: #a855f7;
+}
+
+.dt-event-blue .dt-event-icon {
+  background:
+    rgba(37, 99, 235, 0.10);
+
+  color: #3b82f6;
+}
+
+
+/* =========================================================
+   FILTER GRID
+   ========================================================= */
+
+.dt-filter-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 13px;
+}
+
+.dt-filter-card {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  min-height: 82px;
+
+  padding: 15px;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0d1a2a,
+      #091522
+    );
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.07);
+}
+
+
+/* =========================================================
+   FILTER ICON
+========================================================= */
+
+.dt-filter-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+
+  background: rgba(214, 169, 40, 0.09);
+
+  color: var(--dt-gold, #d6a928);
+}
+
+.dt-filter-icon svg {
+  width: 21px;
+  height: 21px;
+}
+
+/* =========================================================
+   FILTER CONTENT
+   ========================================================= */
+
+.dt-filter-content {
+  min-width: 0;
+
+  width: 100%;
+}
+
+.dt-filter-content strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #dbe5ef;
+
+  font-size: 9px;
+  font-weight: 850;
+
+  letter-spacing: 0.6px;
+}
+
+.dt-filter-content select {
+  width: 100%;
+
+  min-height: 30px;
+
+  padding: 0 8px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  border-radius: 6px;
+
+  outline: none;
+
+  background: #081522;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+
+  cursor: pointer;
+}
+
+.dt-filter-content select:focus {
+  border-color:
+    var(--dt-gold, #d6a928);
+}
+
+
+/* =========================================================
+   QUICK OPERATIONS
+   ========================================================= */
+
+.dt-operation-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 13px;
+}
+
+.dt-operation-card {
+  position: relative;
+
+  min-height: 135px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  padding: 18px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.07);
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0d1a2a,
+      #091522
+    );
+
+  color: #ffffff;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.dt-operation-card:hover {
+  transform: translateY(-3px);
+
+  border-color:
+    rgba(214, 169, 40, 0.22);
+
+  background:
+    linear-gradient(
+      145deg,
+      #102036,
+      #0a1828
+    );
+}
+
+.dt-operation-card:active {
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   OPERATION ICON
+   ========================================================= */
+
+.dt-operation-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+}
+
+.dt-operation-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+/* =========================================================
+   OPERATION CONTENT
+   ========================================================= */
+
+.dt-operation-content {
+  min-width: 0;
+
+  padding-right: 15px;
+}
+
+.dt-operation-content strong {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.dt-operation-content p {
+  margin: 7px 0 0;
+
+  color: #8fa1b5;
+
+  font-size: 9px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   OPERATION ARROW
+   ========================================================= */
+
+.dt-operation-arrow {
+  position: absolute;
+
+  right: 13px;
+  top: 18px;
+
+  width: 16px;
+  height: 16px;
+
+  color: #64748b;
+}
+
+
+/* =========================================================
+   ICON COLORS
+   ========================================================= */
+
+.icon-blue {
+  background:
+    rgba(37, 99, 235, 0.11);
+
+  color: #3b82f6;
+}
+
+.icon-green {
+  background:
+    rgba(34, 197, 94, 0.11);
+
+  color: #22c55e;
+}
+
+.icon-red {
+  background:
+    rgba(239, 68, 68, 0.11);
+
+  color: #ef4444;
+}
+
+.icon-purple {
+  background:
+    rgba(147, 51, 234, 0.11);
+
+  color: #a855f7;
+}
+
+.icon-orange {
+  background:
+    rgba(245, 158, 11, 0.11);
+
+  color: #f59e0b;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1250px) {
+
+  .dt-stat-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .dt-event-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .dt-filter-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .dt-operation-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .dt-dashboard {
+    padding: 22px 20px 40px;
+  }
+
+  .dt-dashboard-header {
+    flex-direction: column;
+  }
+
+  .dt-stat-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .dt-event-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 560px) {
+
+  .dt-dashboard {
+    padding: 18px 14px 30px;
+  }
+
+  .dt-dashboard-header h1 {
+    font-size: 23px;
+  }
+
+  .dt-stat-grid,
+  .dt-event-grid,
+  .dt-filter-grid,
+  .dt-operation-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* =========================================================
+   DIFFERENT.TECH
+   PROFESSIONAL SIDEBAR NAVIGATION
+   LUCIDE ICON SYSTEM
+   ========================================================= */
+
+/* -----------------------------
+   SIDEBAR NAVIGATION
+----------------------------- */
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+/* -----------------------------
+   MAIN NAVIGATION BUTTON
+----------------------------- */
+
+.nav-button {
+  position: relative;
+
+  width: 100%;
+  min-height: 43px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 8px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 9px;
+
+  background: transparent;
+
+  color: #94a3b8;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.045);
+  color: #e2e8f0;
+}
+
+.nav-button.active {
+  background: rgba(255, 255, 255, 0.065);
+  color: #ffffff;
+
+  border-color:
+    rgba(255, 255, 255, 0.055);
+}
+
+.nav-main-button {
+  margin-bottom: 5px;
+}
+
+
+/* -----------------------------
+   NAVIGATION ICON
+----------------------------- */
+
+.nav-icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.nav-icon svg {
+  width: 17px;
+  height: 17px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* -----------------------------
+   ICON COLORS
+----------------------------- */
+
+.nav-icon-blue {
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.10);
+}
+
+.nav-icon-green {
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.10);
+}
+
+.nav-icon-orange {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.10);
+}
+
+.nav-icon-cyan {
+  color: #06b6d4;
+  background: rgba(6, 182, 212, 0.10);
+}
+
+.nav-icon-red {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.10);
+}
+
+.nav-icon-purple {
+  color: #a855f7;
+  background: rgba(168, 85, 247, 0.10);
+}
+
+.nav-icon-gold {
+  color: #d6a928;
+  background: rgba(214, 169, 40, 0.10);
+}
+
+.nav-icon-slate {
+  color: #94a3b8;
+  background: rgba(148, 163, 184, 0.10);
+}
+
+
+/* -----------------------------
+   NAVIGATION LABEL
+----------------------------- */
+
+.nav-label {
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* -----------------------------
+   ACTIVE INDICATOR
+----------------------------- */
+
+.nav-active-indicator {
+  position: absolute;
+
+  right: 7px;
+
+  width: 4px;
+  height: 20px;
+
+  border-radius: 4px;
+
+  background: #3b82f6;
+}
+
+
+/* =========================================================
+   SECTION BUTTONS
+   ========================================================= */
+
+.section-button {
+  width: 100%;
+  min-height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 7px 10px;
+
+  margin-top: 7px;
+
+  border: 1px solid transparent;
+  border-radius: 9px;
+
+  background: transparent;
+
+  color: #cbd5e1;
+
+  font-family: inherit;
+
+  font-size: 9px;
+  font-weight: 900;
+
+  letter-spacing: 0.8px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background 0.18s ease,
+    color 0.18s ease;
+}
+
+.section-button:hover {
+  background: rgba(255, 255, 255, 0.035);
+  color: #ffffff;
+}
+
+
+/* -----------------------------
+   SECTION LEFT
+----------------------------- */
+
+.section-left {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 0;
+}
+
+
+/* -----------------------------
+   SECTION ICON
+----------------------------- */
+
+.section-icon {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 7px;
+}
+
+.section-icon svg {
+  width: 15px;
+  height: 15px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* -----------------------------
+   SECTION COLORS
+----------------------------- */
+
+.section-icon-blue {
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.section-icon-green {
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.08);
+}
+
+.section-icon-orange {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.section-icon-cyan {
+  color: #06b6d4;
+  background: rgba(6, 182, 212, 0.08);
+}
+
+.section-icon-purple {
+  color: #a855f7;
+  background: rgba(168, 85, 247, 0.08);
+}
+
+
+/* -----------------------------
+   SECTION ARROW
+----------------------------- */
+
+.section-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #64748b;
+
+  flex-shrink: 0;
+}
+
+.section-arrow svg {
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* =========================================================
+   SUBMENU
+   ========================================================= */
+
+.submenu {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+
+  margin-left: 8px;
+
+  padding-left: 10px;
+
+  border-left:
+    1px solid
+    rgba(255, 255, 255, 0.07);
+}
+
+
+/* =========================================================
+   LOGOUT BUTTON
+   ========================================================= */
+
+.logout-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 7px 10px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  color: #94a3b8;
+
+  font-family: inherit;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.logout-button:hover {
+  background: rgba(239, 68, 68, 0.09);
+
+  border-color:
+    rgba(239, 68, 68, 0.20);
+
+  color: #f87171;
+}
+
+.logout-button svg {
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* =========================================================
+   LOGIN FEATURE ICONS
+   ========================================================= */
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon svg {
+  width: 20px;
+  height: 20px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.feature-blue {
+  color: #3b82f6;
+}
+
+.feature-green {
+  color: #22c55e;
+}
+
+.feature-orange {
+  color: #f59e0b;
+}
+
+.feature-purple {
+  color: #a855f7;
+}
+
+
+/* =========================================================
+   RESPONSIVE SIDEBAR
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .nav-button {
+    min-height: 41px;
+  }
+
+  .section-button {
+    min-height: 38px;
+  }
+
+  .nav-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+}
+/* =========================================================
+   DIFFERENT.TECH
+   PROFESSIONAL SIDEBAR ICONS
+   ========================================================= */
+
+/* All sidebar icons are WHITE */
+.sidebar svg {
+  width: 18px;
+  height: 18px;
+
+  display: block;
+
+  color: #ffffff;
+
+  stroke: currentColor;
+  fill: none;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SECTION ICONS
+   ========================================================= */
+
+.section-icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  flex-shrink: 0;
+}
+
+.section-icon svg {
+  width: 17px;
+  height: 17px;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   NAVIGATION ICONS
+   ========================================================= */
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  flex-shrink: 0;
+}
+
+.nav-icon svg {
+  width: 16px;
+  height: 16px;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   DASHBOARD ICON
+   ========================================================= */
+
+.dashboard-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-icon svg {
+  width: 19px;
+  height: 19px;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SETTINGS ICON
+   ========================================================= */
+
+.settings-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-icon svg {
+  width: 19px;
+  height: 19px;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SECTION ARROWS
+   ========================================================= */
+
+.section-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-arrow svg {
+  width: 14px;
+  height: 14px;
+
+  color: #94a3b8;
+
+  stroke-width: 2;
+}
+
+
+/* =========================================================
+   KEEP YOUR EXISTING ICON BACKGROUND COLORS
+   ========================================================= */
+
+.sidebar .icon-blue {
+  background: rgba(37, 99, 235, 0.16);
+  color: #ffffff;
+}
+
+.sidebar .icon-green {
+  background: rgba(34, 197, 94, 0.16);
+  color: #ffffff;
+}
+
+.sidebar .icon-red {
+  background: rgba(239, 68, 68, 0.16);
+  color: #ffffff;
+}
+
+.sidebar .icon-purple {
+  background: rgba(147, 51, 234, 0.16);
+  color: #ffffff;
+}
+
+.sidebar .icon-orange {
+  background: rgba(245, 158, 11, 0.16);
+  color: #ffffff;
+}
+
+.sidebar .icon-cyan {
+  background: rgba(6, 182, 212, 0.16);
+  color: #ffffff;
+}
+
+.sidebar .icon-gold {
+  background: rgba(214, 169, 40, 0.16);
+  color: #ffffff;
+}
+
+.sidebar .icon-slate {
+  background: rgba(100, 116, 139, 0.16);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   NAVIGATION TEXT
+   ========================================================= */
+
+.nav-button,
+.dashboard-button,
+.settings-button,
+.section-button {
+  color: #cbd5e1;
+}
+
+.nav-button:hover,
+.dashboard-button:hover,
+.settings-button:hover,
+.section-button:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   ACTIVE NAVIGATION
+   ========================================================= */
+
+.nav-button.active {
+  color: #ffffff;
+}
+
+.nav-button.active .nav-icon {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   SMOOTH ICON HOVER
+   ========================================================= */
+
+.nav-icon,
+.section-icon,
+.dashboard-icon,
+.settings-icon {
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.nav-button:hover .nav-icon,
+.dashboard-button:hover .dashboard-icon,
+.settings-button:hover .settings-icon {
+  transform: translateX(2px);
+}
+
+.section-button:hover .section-icon {
+  transform: scale(1.04);
+}
