@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* ==============================
+   Different.Tech Theme
+============================== */
+
+:root {
+  --color-black: #0A0A0A;
+  --color-dark: #111827;
+  --color-gold: #FBBF24;
+  --color-gold-light: #FCD34D;
+  --color-white: #FFFFFF;
+  --color-gray: #D1D5DB;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Beautiful text selection */
+::selection {
+  background: var(--color-gold);
+  color: black;
+}
+
+/* Gold scrollbar (Chrome/Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FBBF24;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FCD34D;
+}
