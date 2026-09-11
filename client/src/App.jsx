@@ -20,6 +20,7 @@ import {
   Building2,
   Settings,
   ClipboardList,
+  Smartphone,
   ChevronDown,
   ChevronUp,
 } from "lucide-react";
@@ -27,6 +28,7 @@ import {
 import "./App.css";
 
 import ActivityLog from "./pages/admin/ActivityLog";
+import DeviceManagement from "./pages/DeviceManagement";
 import Dashboard from "./pages/Dashboard";
 import LiveTracking from "./pages/LiveTracking";
 import Vehicles from "./pages/Vehicles";
@@ -174,6 +176,9 @@ export default function App() {
       case "activity-log":
         return <ActivityLog />;
 
+
+      case "device-management":
+        return <DeviceManagement />;
       default:
         return (
           <PlaceholderPage
@@ -757,6 +762,18 @@ export default function App() {
                 }
               />
 
+                            <NavButton
+                icon={<Smartphone />}
+                color="gold"
+                label="Device Management"
+                active={
+                  activePage === "device-management"
+                }
+                onClick={() =>
+                  navigate("device-management")
+                }
+              />
+
               <NavButton
                 icon={<ClipboardList />}
                 color="slate"
@@ -983,6 +1000,7 @@ function getPageTitle(page) {
     tenants: "Tenants",
     roles: "Roles & Permissions",
     "activity-log": "Activity Log",
+    "device-management": "Device Management",
 
     settings: "Settings",
 
